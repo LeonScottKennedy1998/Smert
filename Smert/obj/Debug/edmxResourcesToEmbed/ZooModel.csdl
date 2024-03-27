@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ZooAnimalHomeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Animals">
+    <Key>
+      <PropertyRef Name="animal_id" />
+    </Key>
+    <Property Name="animal_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nameA" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="breed" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="age" Type="Int32" Nullable="false" />
+    <Property Name="gender" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="price" Type="Int32" Nullable="false" />
+    <Property Name="arrival_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="id_type" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="AnimalTypes" Relationship="Self.FK__Animals__id_type__398D8EEE" FromRole="Animals" ToRole="AnimalTypes" />
+    <NavigationProperty Name="OrderItems" Relationship="Self.FK__OrderItem__id_an__5535A963" FromRole="Animals" ToRole="OrderItems" />
+  </EntityType>
+  <EntityType Name="AnimalTypes">
+    <Key>
+      <PropertyRef Name="type_idA" />
+    </Key>
+    <Property Name="type_idA" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="type_nameA" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Animals" Relationship="Self.FK__Animals__id_type__398D8EEE" FromRole="AnimalTypes" ToRole="Animals" />
+  </EntityType>
+  <EntityType Name="Customers">
+    <Key>
+      <PropertyRef Name="customer_id" />
+    </Key>
+    <Property Name="customer_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="first_name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="last_name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="middle_name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="email" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="phone" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="OrderReviews" Relationship="Self.FK__OrderRevi__id_cu__59063A47" FromRole="Customers" ToRole="OrderReviews" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK__Orders__id_custo__4F7CD00D" FromRole="Customers" ToRole="Orders" />
+  </EntityType>
+  <EntityType Name="Employees">
+    <Key>
+      <PropertyRef Name="employee_id" />
+    </Key>
+    <Property Name="employee_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="first_name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="last_name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="middle_name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="PasswordE" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UsernameE" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="id_position" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="EmployeesPositions" Relationship="Self.FK__Employees__id_po__3E52440B" FromRole="Employees" ToRole="EmployeesPositions" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK__Orders__id_emplo__5070F446" FromRole="Employees" ToRole="Orders" />
+  </EntityType>
+  <EntityType Name="EmployeesPositions">
+    <Key>
+      <PropertyRef Name="position_id" />
+    </Key>
+    <Property Name="position_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name_position" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Employees" Relationship="Self.FK__Employees__id_po__3E52440B" FromRole="EmployeesPositions" ToRole="Employees" />
+  </EntityType>
+  <EntityType Name="OrderItems">
+    <Key>
+      <PropertyRef Name="order_item_id" />
+    </Key>
+    <Property Name="order_item_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="quantity" Type="Int32" Nullable="false" />
+    <Property Name="item_price" Type="Int32" Nullable="false" />
+    <Property Name="id_order" Type="Int32" Nullable="false" />
+    <Property Name="id_product" Type="Int32" />
+    <Property Name="id_animal" Type="Int32" />
+    <NavigationProperty Name="Animals" Relationship="Self.FK__OrderItem__id_an__5535A963" FromRole="OrderItems" ToRole="Animals" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK__OrderItem__id_or__534D60F1" FromRole="OrderItems" ToRole="Orders" />
+    <NavigationProperty Name="Products" Relationship="Self.FK__OrderItem__id_pr__5441852A" FromRole="OrderItems" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="OrderReviews">
+    <Key>
+      <PropertyRef Name="review_id" />
+    </Key>
+    <Property Name="review_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="rating" Type="Int32" Nullable="false" />
+    <Property Name="comment" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="id_order" Type="Int32" Nullable="false" />
+    <Property Name="id_customer" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Customers" Relationship="Self.FK__OrderRevi__id_cu__59063A47" FromRole="OrderReviews" ToRole="Customers" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK__OrderRevi__id_or__5812160E" FromRole="OrderReviews" ToRole="Orders" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="order_id" />
+    </Key>
+    <Property Name="order_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="order_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="id_customer" Type="Int32" Nullable="false" />
+    <Property Name="id_employee" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Customers" Relationship="Self.FK__Orders__id_custo__4F7CD00D" FromRole="Orders" ToRole="Customers" />
+    <NavigationProperty Name="Employees" Relationship="Self.FK__Orders__id_emplo__5070F446" FromRole="Orders" ToRole="Employees" />
+    <NavigationProperty Name="OrderItems" Relationship="Self.FK__OrderItem__id_or__534D60F1" FromRole="Orders" ToRole="OrderItems" />
+    <NavigationProperty Name="OrderReviews" Relationship="Self.FK__OrderRevi__id_or__5812160E" FromRole="Orders" ToRole="OrderReviews" />
+  </EntityType>
+  <EntityType Name="ProductCategories">
+    <Key>
+      <PropertyRef Name="category_id" />
+    </Key>
+    <Property Name="category_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="category_name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Products" Relationship="Self.FK__Products__id_cat__46E78A0C" FromRole="ProductCategories" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="product_id" />
+    </Key>
+    <Property Name="product_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nameP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="descriptionP" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="price" Type="Int32" Nullable="false" />
+    <Property Name="id_category" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="OrderItems" Relationship="Self.FK__OrderItem__id_pr__5441852A" FromRole="Products" ToRole="OrderItems" />
+    <NavigationProperty Name="ProductCategories" Relationship="Self.FK__Products__id_cat__46E78A0C" FromRole="Products" ToRole="ProductCategories" />
+    <Property Name="amount" Type="Int32" />
+  </EntityType>
+  <Association Name="FK__Animals__id_type__398D8EEE">
+    <End Role="AnimalTypes" Type="Self.AnimalTypes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Animals" Type="Self.Animals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AnimalTypes">
+        <PropertyRef Name="type_idA" />
+      </Principal>
+      <Dependent Role="Animals">
+        <PropertyRef Name="id_type" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrderItem__id_an__5535A963">
+    <End Role="Animals" Type="Self.Animals" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="OrderItems" Type="Self.OrderItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Animals">
+        <PropertyRef Name="animal_id" />
+      </Principal>
+      <Dependent Role="OrderItems">
+        <PropertyRef Name="id_animal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrderRevi__id_cu__59063A47">
+    <End Role="Customers" Type="Self.Customers" Multiplicity="1" />
+    <End Role="OrderReviews" Type="Self.OrderReviews" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customers">
+        <PropertyRef Name="customer_id" />
+      </Principal>
+      <Dependent Role="OrderReviews">
+        <PropertyRef Name="id_customer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Orders__id_custo__4F7CD00D">
+    <End Role="Customers" Type="Self.Customers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customers">
+        <PropertyRef Name="customer_id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="id_customer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Employees__id_po__3E52440B">
+    <End Role="EmployeesPositions" Type="Self.EmployeesPositions" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Employees" Type="Self.Employees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmployeesPositions">
+        <PropertyRef Name="position_id" />
+      </Principal>
+      <Dependent Role="Employees">
+        <PropertyRef Name="id_position" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Orders__id_emplo__5070F446">
+    <End Role="Employees" Type="Self.Employees" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="employee_id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="id_employee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrderItem__id_or__534D60F1">
+    <End Role="Orders" Type="Self.Orders" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="OrderItems" Type="Self.OrderItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="order_id" />
+      </Principal>
+      <Dependent Role="OrderItems">
+        <PropertyRef Name="id_order" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrderItem__id_pr__5441852A">
+    <End Role="Products" Type="Self.Products" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="OrderItems" Type="Self.OrderItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="product_id" />
+      </Principal>
+      <Dependent Role="OrderItems">
+        <PropertyRef Name="id_product" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrderRevi__id_or__5812160E">
+    <End Role="Orders" Type="Self.Orders" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="OrderReviews" Type="Self.OrderReviews" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="order_id" />
+      </Principal>
+      <Dependent Role="OrderReviews">
+        <PropertyRef Name="id_order" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Products__id_cat__46E78A0C">
+    <End Role="ProductCategories" Type="Self.ProductCategories" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Products" Type="Self.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductCategories">
+        <PropertyRef Name="category_id" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="id_category" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ZooAnimalHomeEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Animals" EntityType="Self.Animals" />
+    <EntitySet Name="AnimalTypes" EntityType="Self.AnimalTypes" />
+    <EntitySet Name="Customers" EntityType="Self.Customers" />
+    <EntitySet Name="Employees" EntityType="Self.Employees" />
+    <EntitySet Name="EmployeesPositions" EntityType="Self.EmployeesPositions" />
+    <EntitySet Name="OrderItems" EntityType="Self.OrderItems" />
+    <EntitySet Name="OrderReviews" EntityType="Self.OrderReviews" />
+    <EntitySet Name="Orders" EntityType="Self.Orders" />
+    <EntitySet Name="ProductCategories" EntityType="Self.ProductCategories" />
+    <EntitySet Name="Products" EntityType="Self.Products" />
+    <AssociationSet Name="FK__Animals__id_type__398D8EEE" Association="Self.FK__Animals__id_type__398D8EEE">
+      <End Role="AnimalTypes" EntitySet="AnimalTypes" />
+      <End Role="Animals" EntitySet="Animals" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrderItem__id_an__5535A963" Association="Self.FK__OrderItem__id_an__5535A963">
+      <End Role="Animals" EntitySet="Animals" />
+      <End Role="OrderItems" EntitySet="OrderItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrderRevi__id_cu__59063A47" Association="Self.FK__OrderRevi__id_cu__59063A47">
+      <End Role="Customers" EntitySet="Customers" />
+      <End Role="OrderReviews" EntitySet="OrderReviews" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Orders__id_custo__4F7CD00D" Association="Self.FK__Orders__id_custo__4F7CD00D">
+      <End Role="Customers" EntitySet="Customers" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Employees__id_po__3E52440B" Association="Self.FK__Employees__id_po__3E52440B">
+      <End Role="EmployeesPositions" EntitySet="EmployeesPositions" />
+      <End Role="Employees" EntitySet="Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Orders__id_emplo__5070F446" Association="Self.FK__Orders__id_emplo__5070F446">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrderItem__id_or__534D60F1" Association="Self.FK__OrderItem__id_or__534D60F1">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="OrderItems" EntitySet="OrderItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrderItem__id_pr__5441852A" Association="Self.FK__OrderItem__id_pr__5441852A">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="OrderItems" EntitySet="OrderItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrderRevi__id_or__5812160E" Association="Self.FK__OrderRevi__id_or__5812160E">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="OrderReviews" EntitySet="OrderReviews" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Products__id_cat__46E78A0C" Association="Self.FK__Products__id_cat__46E78A0C">
+      <End Role="ProductCategories" EntitySet="ProductCategories" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
