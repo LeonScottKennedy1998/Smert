@@ -15,7 +15,7 @@
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
 
-        <DataGrid x:Name="AnimalGrid" Grid.Column="0" CanUserAddRows="False" AutoGenerateColumns="False" SelectionChanged="AnimalGrid_SelectionChanged" >
+        <DataGrid x:Name="AnimalGrid" IsReadOnly="True" Grid.Column="0" CanUserAddRows="False" AutoGenerateColumns="False" SelectionChanged="AnimalGrid_SelectionChanged" >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Binding="{Binding animal_id}" />
                 <DataGridTextColumn Header="Имя" Binding="{Binding nameA}" />

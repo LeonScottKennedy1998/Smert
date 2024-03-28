@@ -166,6 +166,7 @@ namespace Smert
             catch (Exception ex)
             {
                 MessageBox.Show("Данные из Json-файла не подходят для этой таблицы");
+                return;
             }
         }
         

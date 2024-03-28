@@ -15,7 +15,7 @@
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
 
-        <DataGrid x:Name="ProductCategoryGrid" CanUserAddRows="False" Grid.Column="0" AutoGenerateColumns="False" SelectionChanged="ProductCategoryGrid_SelectionChanged"  >
+        <DataGrid x:Name="ProductCategoryGrid" IsReadOnly="True" CanUserAddRows="False" Grid.Column="0" AutoGenerateColumns="False" SelectionChanged="ProductCategoryGrid_SelectionChanged"  >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Binding="{Binding category_id}" />
                 <DataGridTextColumn Header="Категория продукта" Binding="{Binding category_name}" />

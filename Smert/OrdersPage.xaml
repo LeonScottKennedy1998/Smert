@@ -15,12 +15,12 @@
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
 
-        <DataGrid x:Name="OrderGrid" CanUserAddRows="False" Grid.Column="0" AutoGenerateColumns="False" SelectionChanged="OrderGrid_SelectionChanged"   >
+        <DataGrid x:Name="OrderGrid" IsReadOnly="True" CanUserAddRows="False" Grid.Column="0" AutoGenerateColumns="False" SelectionChanged="OrderGrid_SelectionChanged"   >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Binding="{Binding order_id}" />
                 <DataGridTextColumn Header="Дата заказа" Binding="{Binding order_date}" />
-                <DataGridTextColumn Header="Клиент, оформивший заказ" Binding="{Binding id_customer}" />
-                <DataGridTextColumn Header="Сотрудник, оформлявший заказ" Binding="{Binding id_employee}" />
+                <DataGridTextColumn Header="Клиент, оформивший заказ" Binding="{Binding Customers.last_name}" />
+                <DataGridTextColumn Header="Сотрудник, оформлявший заказ" Binding="{Binding Employees.last_name}" />
             </DataGrid.Columns>
         </DataGrid>
 

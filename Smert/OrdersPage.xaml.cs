@@ -52,14 +52,12 @@ namespace Smert
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-            // Проверка наличия пустых полей
             if (string.IsNullOrWhiteSpace(OrderdateTB.Text) || CustidCB.SelectedItem == null || EmplidCB.SelectedItem == null)
             {
                 MessageBox.Show("Ошибка, все поля должны быть заполнены.");
                 return;
             }
 
-            // Проверка формата даты и отсутствия смайликов, английских и русских букв
             string orderDate = OrderdateTB.Text;
             if (!Regex.IsMatch(orderDate, @"^\d{2}\.\d{2}\.\d{4}$"))
             {

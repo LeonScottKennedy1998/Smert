@@ -15,7 +15,7 @@
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
 
-        <DataGrid x:Name="EmployeeGrid" CanUserAddRows="False" Grid.Column="0" AutoGenerateColumns="False" SelectionChanged="EmployeeGrid_SelectionChanged">
+        <DataGrid x:Name="EmployeeGrid" IsReadOnly="True" CanUserAddRows="False" Grid.Column="0" AutoGenerateColumns="False" SelectionChanged="EmployeeGrid_SelectionChanged">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Binding="{Binding employee_id}" />
                 <DataGridTextColumn Header="Фамилия" Binding="{Binding last_name}" />

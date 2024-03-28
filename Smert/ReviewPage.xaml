@@ -15,13 +15,13 @@
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
 
-        <DataGrid x:Name="ReviewGrid" CanUserAddRows="False" Grid.Column="0" AutoGenerateColumns="False" SelectionChanged="ReviewGrid_SelectionChanged"  >
+        <DataGrid x:Name="ReviewGrid" IsReadOnly="True" CanUserAddRows="False" Grid.Column="0" AutoGenerateColumns="False" SelectionChanged="ReviewGrid_SelectionChanged"  >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Binding="{Binding review_id}" />
                 <DataGridTextColumn Header="Оценка" Binding="{Binding rating}" />
                 <DataGridTextColumn Header="Комментарий" Binding="{Binding comment}" />
-                <DataGridTextColumn Header="Номер заказа" Binding="{Binding id_order}" />
-                <DataGridTextColumn Header="Клиент" Binding="{Binding id_customer}" />
+                <DataGridTextColumn Header="Номер заказа" Binding="{Binding Orders.order_date}" />
+                <DataGridTextColumn Header="Клиент" Binding="{Binding Customers.last_name}" />
             </DataGrid.Columns>
         </DataGrid>
 

@@ -70,6 +70,7 @@ namespace Smert
                 catch (Exception ex)
                 {
                     MessageBox.Show("Произошла ошибка при изменении роли");
+                    return;
                 }
             }
         }
@@ -118,6 +119,7 @@ namespace Smert
             catch (Exception ex)
             {
                 MessageBox.Show("Произошла ошибка при добавлении роли");
+                return;
             }
         }
 

@@ -49,9 +49,9 @@ namespace Smert
                 return;
             }
             string email = EmailBx.Text;
-            if (Regex.IsMatch(email, @"[а-яА-Я]") || Regex.IsMatch(email, @"[\uD800-\uDFFF\uDC00-\uDFFF]"))
+            if (Regex.IsMatch(email, @"[а-яА-Я]") || Regex.IsMatch(email, @"[\uD800-\uDFFF\uDC00-\uDFFF]") || email.StartsWith("@"))
             {
-                MessageBox.Show("Ошибка, адрес электронной почты содержит недопустимые символы");
+                MessageBox.Show("Ошибка, адрес электронной почты содержит недопустимые символы или начинается с '@'");
                 return;
             }
 
@@ -123,7 +123,7 @@ namespace Smert
                     return;
                 }
                 string email = EmailBx.Text;
-                if (Regex.IsMatch(selectedCustomer.email, @"[а-яА-Я]") || Regex.IsMatch(selectedCustomer.email, @"[^\u0020-\u007E]"))
+                if (Regex.IsMatch(selectedCustomer.email, @"[а-яА-Я]") || Regex.IsMatch(selectedCustomer.email, @"[^\u0020-\u007E]") || email.StartsWith("@"))
                 {
                     MessageBox.Show("Ошибка, адрес электронной почты содержит недопустимые символы");
                     selectedCustomer.email = OldEmail;
@@ -223,6 +223,7 @@ namespace Smert
             catch (Exception ex) 
             {
                 MessageBox.Show("Данные из Json-файла не подходят для этой таблицы");
+                return;
             }
         }
        

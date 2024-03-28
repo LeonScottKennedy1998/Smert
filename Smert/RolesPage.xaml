@@ -15,7 +15,7 @@
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
 
-        <DataGrid x:Name="RoleGrid" CanUserAddRows="False" Grid.Column="0" AutoGenerateColumns="False" SelectionChanged="RoleGrid_SelectionChanged">
+        <DataGrid x:Name="RoleGrid" IsReadOnly="True" CanUserAddRows="False" Grid.Column="0" AutoGenerateColumns="False" SelectionChanged="RoleGrid_SelectionChanged">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Binding="{Binding position_id}" />
                 <DataGridTextColumn Header="Название роли" Binding="{Binding name_position}" />

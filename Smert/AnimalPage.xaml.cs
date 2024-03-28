@@ -69,11 +69,13 @@ namespace Smert
                 return;
             }
 
-            if (!DateTime.TryParseExact(ArrivalDateTB.Text, "dd.MM.yyyy", null, System.Globalization.DateTimeStyles.None, out _))
+            DateTime arrivalDate;
+            if (!DateTime.TryParseExact(ArrivalDateTB.Text, "dd.MM.yyyy", null, System.Globalization.DateTimeStyles.None, out arrivalDate) || arrivalDate.Year < 2000 || arrivalDate.Year > 2024)
             {
-                MessageBox.Show("Ошибка: неверный формат даты. Используйте формат dd.MM.yyyy.");
+                MessageBox.Show("Ошибка: неверный формат даты. Используйте формат dd.MM.yyyy и год должен быть больше 2000 и меньше 2025.");
                 return;
             }
+
 
             if (Regex.IsMatch(NameTb.Text, @"[\uD800-\uDFFF\uDC00-\uDFFF]") || Regex.IsMatch(BreedTB.Text, @"[\uD800-\uDFFF\uDC00-\uDFFF]"))
             {
@@ -134,9 +136,10 @@ namespace Smert
                     return;
                 }
 
-                if (!DateTime.TryParseExact(ArrivalDateTB.Text, "dd.MM.yyyy", null, System.Globalization.DateTimeStyles.None, out _))
+                DateTime arrivalDate;
+                if (!DateTime.TryParseExact(ArrivalDateTB.Text, "dd.MM.yyyy", null, System.Globalization.DateTimeStyles.None, out arrivalDate) || arrivalDate.Year < 2000 || arrivalDate.Year > 2024)
                 {
-                    MessageBox.Show("Ошибка: неверный формат даты. Используйте формат dd.MM.yyyy.");
+                    MessageBox.Show("Ошибка: неверный формат даты. Используйте формат dd.MM.yyyy и год должен быть больше 2000 и меньше 2025.");
                     return;
                 }
 
@@ -145,6 +148,15 @@ namespace Smert
                     MessageBox.Show("Ошибка: поля не должны содержать смайлики.");
                     return;
                 }
+
+                var selectedType = IdCB.SelectedItem as AnimalTypes;
+                if (selectedType == null)
+                {
+                    MessageBox.Show("Ошибка: Выберите тип животного.");
+                    return;
+                }
+
+                selectedAnimal.id_type = selectedType.type_idA;
                 selectedAnimal.nameA = NameTb.Text;
                 selectedAnimal.breed = BreedTB.Text;
                 selectedAnimal.age = int.Parse(AgeTB.Text);
@@ -183,18 +195,20 @@ namespace Smert
             if (AnimalGrid.SelectedItem != null)
             {
                 var selectedAnimal = AnimalGrid.SelectedItem as Animals;
-                
-                    NameTb.Text = selectedAnimal.nameA;
-                    BreedTB.Text = selectedAnimal.breed;
-                    AgeTB.Text = selectedAnimal.age.ToString();
-                    GenderTB.Text = selectedAnimal.gender;
-                    PriceTB.Text = selectedAnimal.price.ToString();
-                    ArrivalDateTB.Text = selectedAnimal.arrival_date.ToShortDateString();
-                    var position = zoo.AnimalTypes.FirstOrDefault(p => p.type_idA == selectedAnimal.animal_id);
-                    if (position != null)
-                    {
-                        IdCB.SelectedItem = position;
-                    }
+
+                NameTb.Text = selectedAnimal.nameA;
+                BreedTB.Text = selectedAnimal.breed;
+                AgeTB.Text = selectedAnimal.age.ToString();
+                GenderTB.Text = selectedAnimal.gender;
+                PriceTB.Text = selectedAnimal.price.ToString();
+                ArrivalDateTB.Text = selectedAnimal.arrival_date.ToShortDateString();
+
+
+                var position = zoo.AnimalTypes.FirstOrDefault(p => p.type_idA == selectedAnimal.id_type);
+                if (position != null)
+                {
+                    IdCB.SelectedItem = position;
+                }
             }
         }
     }

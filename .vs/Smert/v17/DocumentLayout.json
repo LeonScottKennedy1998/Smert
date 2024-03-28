@@ -3,12 +3,64 @@
   "WorkspaceRootPath": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|d:\\\u0441 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\project mpt\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B visual studio\\wpffuck\\smert\\smert\\animalpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|solutionrelative:smert\\animalpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|d:\\\u0441 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\project mpt\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B visual studio\\wpffuck\\smert\\smert\\animalpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|solutionrelative:smert\\animalpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|d:\\\u0441 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\project mpt\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B visual studio\\wpffuck\\smert\\smert\\customerspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|solutionrelative:smert\\customerspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|d:\\\u0441 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\project mpt\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B visual studio\\wpffuck\\smert\\smert\\reviewpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|solutionrelative:smert\\reviewpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|d:\\\u0441 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\project mpt\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B visual studio\\wpffuck\\smert\\smert\\orderitemspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|solutionrelative:smert\\orderitemspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|d:\\\u0441 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\project mpt\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B visual studio\\wpffuck\\smert\\smert\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|solutionrelative:smert\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|d:\\\u0441 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\project mpt\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B visual studio\\wpffuck\\smert\\smert\\productpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|solutionrelative:smert\\productpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|d:\\\u0441 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\project mpt\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B visual studio\\wpffuck\\smert\\smert\\customerspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|solutionrelative:smert\\customerspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|d:\\\u0441 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\project mpt\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B visual studio\\wpffuck\\smert\\smert\\jsonimport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|solutionrelative:smert\\jsonimport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|d:\\\u0441 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\project mpt\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B visual studio\\wpffuck\\smert\\smert\\orderspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|solutionrelative:smert\\orderspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|d:\\\u0441 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\project mpt\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B visual studio\\wpffuck\\smert\\smert\\orderitemspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|solutionrelative:smert\\orderitemspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|d:\\\u0441 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\project mpt\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B visual studio\\wpffuck\\smert\\smert\\orderspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|solutionrelative:smert\\orderspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|d:\\\u0441 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\project mpt\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B visual studio\\wpffuck\\smert\\smert\\rolespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|solutionrelative:smert\\rolespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|d:\\\u0441 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\project mpt\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B visual studio\\wpffuck\\smert\\smert\\productpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|solutionrelative:smert\\productpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|d:\\\u0441 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\project mpt\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B visual studio\\wpffuck\\smert\\smert\\zoomodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{3EB86F80-6FAA-404A-9383-A61EA781B714}|Smert\\Smert.csproj|solutionrelative:smert\\zoomodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +78,190 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReviewPage.xaml",
+              "DocumentMoniker": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\ReviewPage.xaml",
+              "RelativeDocumentMoniker": "Smert\\ReviewPage.xaml",
+              "ToolTip": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\ReviewPage.xaml",
+              "RelativeToolTip": "Smert\\ReviewPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-28T13:24:42.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrdersPage.xaml",
+              "DocumentMoniker": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\OrdersPage.xaml",
+              "RelativeDocumentMoniker": "Smert\\OrdersPage.xaml",
+              "ToolTip": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\OrdersPage.xaml",
+              "RelativeToolTip": "Smert\\OrdersPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-28T13:12:00.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "OrderItemsPage.xaml.cs",
-              "DocumentMoniker": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\OrderItemsPage.xaml.cs",
-              "RelativeDocumentMoniker": "Smert\\OrderItemsPage.xaml.cs",
-              "ToolTip": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\OrderItemsPage.xaml.cs",
-              "RelativeToolTip": "Smert\\OrderItemsPage.xaml.cs",
-              "ViewState": "AQIAAAEBAAAAAAAAAAAIwDsBAAABAAAA",
+              "Title": "AnimalPage.xaml.cs",
+              "DocumentMoniker": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\AnimalPage.xaml.cs",
+              "RelativeDocumentMoniker": "Smert\\AnimalPage.xaml.cs",
+              "ToolTip": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\AnimalPage.xaml.cs",
+              "RelativeToolTip": "Smert\\AnimalPage.xaml.cs",
+              "ViewState": "AQIAAHYAAAAAAAAAAAAQwI4AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T13:17:47.917Z",
+              "WhenOpened": "2024-03-28T13:10:48.964Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AnimalPage.xaml",
+              "DocumentMoniker": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\AnimalPage.xaml",
+              "RelativeDocumentMoniker": "Smert\\AnimalPage.xaml",
+              "ToolTip": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\AnimalPage.xaml",
+              "RelativeToolTip": "Smert\\AnimalPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-28T13:10:47.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProductPage.xaml.cs",
+              "DocumentMoniker": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\ProductPage.xaml.cs",
+              "RelativeDocumentMoniker": "Smert\\ProductPage.xaml.cs",
+              "ToolTip": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\ProductPage.xaml.cs",
+              "RelativeToolTip": "Smert\\ProductPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T13:10:12.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductPage.xaml",
+              "DocumentMoniker": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\ProductPage.xaml",
+              "RelativeDocumentMoniker": "Smert\\ProductPage.xaml",
+              "ToolTip": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\ProductPage.xaml",
+              "RelativeToolTip": "Smert\\ProductPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-28T13:10:11.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CustomersPage.xaml.cs",
+              "DocumentMoniker": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\CustomersPage.xaml.cs",
+              "RelativeDocumentMoniker": "Smert\\CustomersPage.xaml.cs",
+              "ToolTip": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\CustomersPage.xaml.cs",
+              "RelativeToolTip": "Smert\\CustomersPage.xaml.cs",
+              "ViewState": "AQIAALsAAAAAAAAAAAAEwNQAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T13:06:04.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomersPage.xaml",
+              "DocumentMoniker": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\CustomersPage.xaml",
+              "RelativeDocumentMoniker": "Smert\\CustomersPage.xaml",
+              "ToolTip": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\CustomersPage.xaml",
+              "RelativeToolTip": "Smert\\CustomersPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-28T13:03:28.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "JsonImport.cs",
+              "DocumentMoniker": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\JsonImport.cs",
+              "RelativeDocumentMoniker": "Smert\\JsonImport.cs",
+              "ToolTip": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\JsonImport.cs",
+              "RelativeToolTip": "Smert\\JsonImport.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T12:42:37.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RolesPage.xaml.cs",
+              "DocumentMoniker": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\RolesPage.xaml.cs",
+              "RelativeDocumentMoniker": "Smert\\RolesPage.xaml.cs",
+              "ToolTip": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\RolesPage.xaml.cs",
+              "RelativeToolTip": "Smert\\RolesPage.xaml.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAkwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T12:20:53.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrdersPage.xaml.cs",
+              "DocumentMoniker": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\OrdersPage.xaml.cs",
+              "RelativeDocumentMoniker": "Smert\\OrdersPage.xaml.cs",
+              "ToolTip": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\OrdersPage.xaml.cs",
+              "RelativeToolTip": "Smert\\OrdersPage.xaml.cs",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAkwDwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T12:20:40.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "OrderItemsPage.xaml",
               "DocumentMoniker": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\OrderItemsPage.xaml",
               "RelativeDocumentMoniker": "Smert\\OrderItemsPage.xaml",
               "ToolTip": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\OrderItemsPage.xaml",
               "RelativeToolTip": "Smert\\OrderItemsPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-27T07:01:40.855Z",
+              "WhenOpened": "2024-03-28T12:03:49.519Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderItemsPage.xaml.cs",
+              "DocumentMoniker": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\OrderItemsPage.xaml.cs",
+              "RelativeDocumentMoniker": "Smert\\OrderItemsPage.xaml.cs",
+              "ToolTip": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\OrderItemsPage.xaml.cs",
+              "RelativeToolTip": "Smert\\OrderItemsPage.xaml.cs",
+              "ViewState": "AQIAAPsAAAAAAAAAAAAvwA4BAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T12:03:38.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Smert\\MainWindow.xaml",
+              "ToolTip": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\MainWindow.xaml",
+              "RelativeToolTip": "Smert\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-28T11:51:39.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ZooModel.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\ZooModel.edmx",
+              "RelativeDocumentMoniker": "Smert\\ZooModel.edmx",
+              "ToolTip": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Smert\\Smert\\ZooModel.edmx [Diagram1]",
+              "RelativeToolTip": "Smert\\ZooModel.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-03-28T11:10:48.811Z",
+              "EditorCaption": " [Diagram1]"
             }
           ]
         }

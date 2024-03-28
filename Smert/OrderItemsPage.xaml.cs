@@ -160,10 +160,23 @@ namespace Smert
             if (AnimalCB.SelectedItem != null)
             {
                 newItem.id_animal = (AnimalCB.SelectedItem as Animals)?.animal_id;
+                newItem.id_product = null;
+
             }
             else
             {
                 newItem.id_animal = null;
+            }
+
+            if (ProdCB.SelectedItem != null)
+            {
+                newItem.id_product = (ProdCB.SelectedItem as Products)?.product_id;
+                newItem.id_animal = null;
+
+            }
+            else
+            {
+                newItem.id_product = null;
             }
 
             zoo.OrderItems.Add(newItem);
@@ -189,16 +202,16 @@ namespace Smert
                 }
 
                 selectedItem.id_order = (OrderCB.SelectedItem as Orders)?.order_id ?? 0;
-                selectedItem.id_product = (ProdCB.SelectedItem as Products)?.product_id ?? 0;
 
-                var selectedAnimal = AnimalCB.SelectedItem as Animals;
-                if (selectedAnimal != null)
+                if (ProdCB.SelectedItem != null)
                 {
-                    selectedItem.id_animal = selectedAnimal.animal_id;
+                    selectedItem.id_product = (ProdCB.SelectedItem as Products)?.product_id ?? 0;
+                    selectedItem.item_price = (ProdCB.SelectedItem as Products)?.price ?? 0; 
                 }
-                else
+                else if (AnimalCB.SelectedItem != null)
                 {
-                    selectedItem.id_animal = null;
+                    selectedItem.id_animal = (AnimalCB.SelectedItem as Animals)?.animal_id;
+                    selectedItem.item_price = (AnimalCB.SelectedItem as Animals)?.price ?? 0;
                 }
 
                 zoo.SaveChanges();
@@ -295,6 +308,11 @@ namespace Smert
                 return;
             }
 
+            if (totalAmount == 0)
+            {
+                MessageBox.Show("Выберите товары");
+                return;
+            }
             receiptContent.AppendLine($"Итого к оплате: {totalAmount}");
             receiptContent.AppendLine($"Внесено: {paymentAmount}");
             receiptContent.AppendLine($"Сдача: {paymentAmount - totalAmount}");
@@ -307,10 +325,12 @@ namespace Smert
             receiptNumber++;
 
             MessageBox.Show("Чек успешно экспортирован.");
-            Application.Current.Shutdown();
+            CartGrid.Items.Clear();
+            totalAmount = 0;
+            TotalAmountLabel.Content = $"Итого к оплате: {totalAmount}";
+            PaymentAmountTextBox.Text = "";
 
         }
-
 
     }
 }
